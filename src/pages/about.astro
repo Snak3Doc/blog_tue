@@ -1,5 +1,14 @@
 ---
+const pageTitle = "About Me";
 
+const identity = {
+	firstName: "SnakeDoc",
+	country: "Vietnam",
+	occupation: "Programing Instructor",
+	hobbies: ["programming", "gaming", "hiking"]
+};
+
+const skills = ["Python", "C#", "JS", "HTML", "CSS", "Astro", "Unity", "Pygame", "PyQt"];
 ---
 
 <html lang="en">
@@ -8,17 +17,34 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>{pageTitle}</title>
 	</head>
 	<body>
         <a href="/">Home</a>
         <a href="/about/">About</a>
         <a href="/blog/">Blog</a>
 
-        <h1>About Me</h1>
+        <h1>{pageTitle}</h1>
         <h2>... and my new wensite built with Astro.</h2>
 
         <p>I am working on building a blog using the Astro framework.</p>
         <p>This site will update as i learn more about Astros features.</p>
+
+		<p>Here are a few facts about me:</p>
+		<ul>
+			<li>My name is {identity.firstName}.</li>
+			<li>I live in {identity.country} and i work as a {identity.occupation}.</li>
+			<li>My Hobbies are:</li>
+			<ul>
+				{identity.hobbies.length >= 2 &&
+					identity.hobbies.map((hobby) => <li>{hobby}</li>)
+				}
+			</ul>
+		</ul>
+
+		<p>My skills are:</p>
+		<ul>
+			{skills.map((skill) => <li>{skill}</li>)}
+		</ul>
 	</body>
 </html>
