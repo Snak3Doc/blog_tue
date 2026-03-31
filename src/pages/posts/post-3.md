@@ -1,5 +1,6 @@
 ---
-title: "My First Blog"
+layout: ../../layouts/MarkdownPostLayout.astro
+title: "My Blog About Eating Bananas"
 pubDate: 2026-01-20
 description: "This is the first post on my new Astro blog."
 author: "SnakeDoc"
