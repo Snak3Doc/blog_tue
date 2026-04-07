@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/MarkdownPostLayout.astro
+layout: ../../layouts/MarkDownPostLayout.astro
 title: "My Blog About Eating Bananas"
 pubDate: 2026-01-20
 description: "This is the first post on my new Astro blog."

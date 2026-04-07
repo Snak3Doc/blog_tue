@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/MarkdownPostLayout.astro
+layout: ../../layouts/MarkDownPostLayout.astro
 title: Testing Page Generation
 author: Astro Learner
 description: "This post is to test the Page Generation by tag filtering works"
