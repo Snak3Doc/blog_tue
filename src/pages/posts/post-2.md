@@ -2,7 +2,7 @@
 layout: ../../layouts/MarkdownPostLayout.astro
 title: "My Second Blog"
 pubDate: 2026-01-20
-description: "This is the first post on my new Astro blog."
+description: "This is the second post on my new Astro blog."
 author: "SnakeDoc"
 image:
     url: "https://docs.astro.build/assets/rose.webp"
